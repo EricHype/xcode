@@ -19,6 +19,7 @@
 		4BDEEA9D1B5D87B100FB0FBD /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDEEA9C1B5D87B100FB0FBD /* Checklist.swift */; };
 		4BDEEA9F1B5D946500FB0FBD /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDEEA9E1B5D946500FB0FBD /* ListDetailViewController.swift */; };
 		4BDEEAA11B5DB4F400FB0FBD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDEEAA01B5DB4F400FB0FBD /* DataModel.swift */; };
+		4BDEEAA31B5DD74600FB0FBD /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDEEAA21B5DD74600FB0FBD /* IconPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		4BDEEA9C1B5D87B100FB0FBD /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		4BDEEA9E1B5D946500FB0FBD /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		4BDEEAA01B5DB4F400FB0FBD /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		4BDEEAA21B5DD74600FB0FBD /* IconPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				4BDEEA9C1B5D87B100FB0FBD /* Checklist.swift */,
 				4BDEEA9E1B5D946500FB0FBD /* ListDetailViewController.swift */,
 				4BDEEAA01B5DB4F400FB0FBD /* DataModel.swift */,
+				4BDEEAA21B5DD74600FB0FBD /* IconPickerViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				4B0EF15B1B4F31F30068BECE /* ChecklistViewController.swift in Sources */,
 				4BDEEA9F1B5D946500FB0FBD /* ListDetailViewController.swift in Sources */,
 				4BDEEA991B58908D00FB0FBD /* ItemDetailViewController.swift in Sources */,
+				4BDEEAA31B5DD74600FB0FBD /* IconPickerViewController.swift in Sources */,
 				4BDEEA9D1B5D87B100FB0FBD /* Checklist.swift in Sources */,
 				4BDEEA971B58624100FB0FBD /* ChecklistItem.swift in Sources */,
 				4BDEEAA11B5DB4F400FB0FBD /* DataModel.swift in Sources */,
