@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             as! AllListsViewController
         controller.dataModel = dataModel
         
+        let notificationSettings = UIUserNotificationSettings(forTypes: .Alert | .Sound, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+        
         return true
     }
 
@@ -49,6 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func saveData() {
         dataModel.saveChecklists()
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        println("didReceiveLocalNotification \(notification)")
     }
 
 }
