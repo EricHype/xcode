@@ -10,9 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var openBarButton: UIBarButtonItem!
+    
+    @IBOutlet weak var label: UILabel!
+    
+    var varView = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        openBarButton.target = self.revealViewController()
+        
+        openBarButton.action = Selector("revealToggle:")
+        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        
+        if(varView == 0){
+            label.text = "Strings"
+        } else{
+            label.text = "Others"
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
