@@ -31,10 +31,28 @@ class LocationDetailsViewController: UITableViewController {
 	var placemark: CLPlacemark?
 	var categoryName = "No Category"
 	var managedObjectContext: NSManagedObjectContext!
+	var date : NSDate = NSDate()
+	var locationToEdit: Location? {
+		didSet {
+			if let location = locationToEdit {
+				descriptionText = location.locationDescription
+				categoryName = location.category
+				date = location.date
+				coordinate = CLLocationCoordinate2DMake(location.latitude, location.longitude)
+				placemark = location.placemark
+			}
+		}
+	}
+	
+	var descriptionText = ""
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		descriptionTextView.text = ""
+		
+		if let _ = locationToEdit {
+			title = "Edit Location"
+		}
+		descriptionTextView.text = descriptionText
 		categoryLabel.text = ""
 		latitudeLabel.text = String(format: "%.8f", coordinate.latitude)
 		longitudeLabel.text = String(format: "%.8f", coordinate.longitude)
@@ -45,7 +63,7 @@ class LocationDetailsViewController: UITableViewController {
 		} else {
 			addressLabel.text = "No Address Found"
 		}
-		dateLabel.text = formatDate(NSDate())
+		dateLabel.text = formatDate(date)
 		
 		let gestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard:"))
 		gestureRecognizer.cancelsTouchesInView = false
@@ -64,15 +82,21 @@ class LocationDetailsViewController: UITableViewController {
 	
 	@IBAction func done() {
 		let hudView = HudView.hudInView(navigationController!.view,animated: true)
-		hudView.text = "Tagged"
-
-		let location = NSEntityDescription.insertNewObjectForEntityForName( "Location", inManagedObjectContext: managedObjectContext) as! Location
+				
+		let location: Location
+		if let temp = locationToEdit {
+			hudView.text = "Updated"
+			location = temp
+		} else {
+			hudView.text = "Tagged"
+			location = NSEntityDescription.insertNewObjectForEntityForName("Location", inManagedObjectContext: managedObjectContext) as! Location
+		}
 		
 		location.locationDescription = descriptionTextView.text
 		location.category = categoryName
 		location.latitude = coordinate.latitude
 		location.longitude = coordinate.longitude
-		location.date = NSDate()
+		location.date = date
 		location.placemark = placemark
 		
 		do {
