@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B3380D31CCAC1A3008C5793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3380D21CCAC1A3008C5793 /* AppDelegate.swift */; };
+		4B3380D51CCAC1A3008C5793 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3380D41CCAC1A3008C5793 /* ViewController.swift */; };
+		4B3380D81CCAC1A3008C5793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3380D61CCAC1A3008C5793 /* Main.storyboard */; };
+		4B3380DB1CCAC1A3008C5793 /* battleship.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3380D91CCAC1A3008C5793 /* battleship.xcdatamodeld */; };
+		4B3380DD1CCAC1A3008C5793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3380DC1CCAC1A3008C5793 /* Assets.xcassets */; };
+		4B3380E01CCAC1A3008C5793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3380DE1CCAC1A3008C5793 /* LaunchScreen.storyboard */; };
+		4B3380EB1CCAC1A3008C5793 /* battleshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3380EA1CCAC1A3008C5793 /* battleshipTests.swift */; };
+		4B3380F61CCAC1A3008C5793 /* battleshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3380F51CCAC1A3008C5793 /* battleshipUITests.swift */; };
+		4B3381041CCAC1E0008C5793 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3381031CCAC1E0008C5793 /* Position.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B3380E71CCAC1A3008C5793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B3380C71CCAC1A3008C5793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3380CE1CCAC1A3008C5793;
+			remoteInfo = battleship;
+		};
+		4B3380F21CCAC1A3008C5793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B3380C71CCAC1A3008C5793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3380CE1CCAC1A3008C5793;
+			remoteInfo = battleship;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B3380CF1CCAC1A3008C5793 /* battleship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = battleship.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3380D21CCAC1A3008C5793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B3380D41CCAC1A3008C5793 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B3380D71CCAC1A3008C5793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B3380DA1CCAC1A3008C5793 /* battleship.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = battleship.xcdatamodel; sourceTree = "<group>"; };
+		4B3380DC1CCAC1A3008C5793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B3380DF1CCAC1A3008C5793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B3380E11CCAC1A3008C5793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3380E61CCAC1A3008C5793 /* battleshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = battleshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3380EA1CCAC1A3008C5793 /* battleshipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battleshipTests.swift; sourceTree = "<group>"; };
+		4B3380EC1CCAC1A3008C5793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3380F11CCAC1A3008C5793 /* battleshipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = battleshipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3380F51CCAC1A3008C5793 /* battleshipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battleshipUITests.swift; sourceTree = "<group>"; };
+		4B3380F71CCAC1A3008C5793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3381031CCAC1E0008C5793 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3380CC1CCAC1A3008C5793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3380E31CCAC1A3008C5793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3380EE1CCAC1A3008C5793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B3380C61CCAC1A3008C5793 = {
+			isa = PBXGroup;
+			children = (
+				4B3380D11CCAC1A3008C5793 /* battleship */,
+				4B3380E91CCAC1A3008C5793 /* battleshipTests */,
+				4B3380F41CCAC1A3008C5793 /* battleshipUITests */,
+				4B3380D01CCAC1A3008C5793 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B3380D01CCAC1A3008C5793 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B3380CF1CCAC1A3008C5793 /* battleship.app */,
+				4B3380E61CCAC1A3008C5793 /* battleshipTests.xctest */,
+				4B3380F11CCAC1A3008C5793 /* battleshipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B3380D11CCAC1A3008C5793 /* battleship */ = {
+			isa = PBXGroup;
+			children = (
+				4B3380D21CCAC1A3008C5793 /* AppDelegate.swift */,
+				4B3380D41CCAC1A3008C5793 /* ViewController.swift */,
+				4B3380D61CCAC1A3008C5793 /* Main.storyboard */,
+				4B3380DC1CCAC1A3008C5793 /* Assets.xcassets */,
+				4B3380DE1CCAC1A3008C5793 /* LaunchScreen.storyboard */,
+				4B3380E11CCAC1A3008C5793 /* Info.plist */,
+				4B3380D91CCAC1A3008C5793 /* battleship.xcdatamodeld */,
+				4B3381031CCAC1E0008C5793 /* Position.swift */,
+			);
+			path = battleship;
+			sourceTree = "<group>";
+		};
+		4B3380E91CCAC1A3008C5793 /* battleshipTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B3380EA1CCAC1A3008C5793 /* battleshipTests.swift */,
+				4B3380EC1CCAC1A3008C5793 /* Info.plist */,
+			);
+			path = battleshipTests;
+			sourceTree = "<group>";
+		};
+		4B3380F41CCAC1A3008C5793 /* battleshipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B3380F51CCAC1A3008C5793 /* battleshipUITests.swift */,
+				4B3380F71CCAC1A3008C5793 /* Info.plist */,
+			);
+			path = battleshipUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B3380CE1CCAC1A3008C5793 /* battleship */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3380FA1CCAC1A3008C5793 /* Build configuration list for PBXNativeTarget "battleship" */;
+			buildPhases = (
+				4B3380CB1CCAC1A3008C5793 /* Sources */,
+				4B3380CC1CCAC1A3008C5793 /* Frameworks */,
+				4B3380CD1CCAC1A3008C5793 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = battleship;
+			productName = battleship;
+			productReference = 4B3380CF1CCAC1A3008C5793 /* battleship.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B3380E51CCAC1A3008C5793 /* battleshipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3380FD1CCAC1A3008C5793 /* Build configuration list for PBXNativeTarget "battleshipTests" */;
+			buildPhases = (
+				4B3380E21CCAC1A3008C5793 /* Sources */,
+				4B3380E31CCAC1A3008C5793 /* Frameworks */,
+				4B3380E41CCAC1A3008C5793 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B3380E81CCAC1A3008C5793 /* PBXTargetDependency */,
+			);
+			name = battleshipTests;
+			productName = battleshipTests;
+			productReference = 4B3380E61CCAC1A3008C5793 /* battleshipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B3380F01CCAC1A3008C5793 /* battleshipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3381001CCAC1A3008C5793 /* Build configuration list for PBXNativeTarget "battleshipUITests" */;
+			buildPhases = (
+				4B3380ED1CCAC1A3008C5793 /* Sources */,
+				4B3380EE1CCAC1A3008C5793 /* Frameworks */,
+				4B3380EF1CCAC1A3008C5793 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B3380F31CCAC1A3008C5793 /* PBXTargetDependency */,
+			);
+			name = battleshipUITests;
+			productName = battleshipUITests;
+			productReference = 4B3380F11CCAC1A3008C5793 /* battleshipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B3380C71CCAC1A3008C5793 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Eric Heitmuller";
+				TargetAttributes = {
+					4B3380CE1CCAC1A3008C5793 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4B3380E51CCAC1A3008C5793 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4B3380CE1CCAC1A3008C5793;
+					};
+					4B3380F01CCAC1A3008C5793 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4B3380CE1CCAC1A3008C5793;
+					};
+				};
+			};
+			buildConfigurationList = 4B3380CA1CCAC1A3008C5793 /* Build configuration list for PBXProject "battleship" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B3380C61CCAC1A3008C5793;
+			productRefGroup = 4B3380D01CCAC1A3008C5793 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B3380CE1CCAC1A3008C5793 /* battleship */,
+				4B3380E51CCAC1A3008C5793 /* battleshipTests */,
+				4B3380F01CCAC1A3008C5793 /* battleshipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B3380CD1CCAC1A3008C5793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3380E01CCAC1A3008C5793 /* LaunchScreen.storyboard in Resources */,
+				4B3380DD1CCAC1A3008C5793 /* Assets.xcassets in Resources */,
+				4B3380D81CCAC1A3008C5793 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3380E41CCAC1A3008C5793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3380EF1CCAC1A3008C5793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B3380CB1CCAC1A3008C5793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3380DB1CCAC1A3008C5793 /* battleship.xcdatamodeld in Sources */,
+				4B3380D51CCAC1A3008C5793 /* ViewController.swift in Sources */,
+				4B3381041CCAC1E0008C5793 /* Position.swift in Sources */,
+				4B3380D31CCAC1A3008C5793 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3380E21CCAC1A3008C5793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3380EB1CCAC1A3008C5793 /* battleshipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3380ED1CCAC1A3008C5793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3380F61CCAC1A3008C5793 /* battleshipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B3380E81CCAC1A3008C5793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3380CE1CCAC1A3008C5793 /* battleship */;
+			targetProxy = 4B3380E71CCAC1A3008C5793 /* PBXContainerItemProxy */;
+		};
+		4B3380F31CCAC1A3008C5793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3380CE1CCAC1A3008C5793 /* battleship */;
+			targetProxy = 4B3380F21CCAC1A3008C5793 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B3380D61CCAC1A3008C5793 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B3380D71CCAC1A3008C5793 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B3380DE1CCAC1A3008C5793 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B3380DF1CCAC1A3008C5793 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B3380F81CCAC1A3008C5793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B3380F91CCAC1A3008C5793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B3380FB1CCAC1A3008C5793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = battleship/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericheitmuller.battleship;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4B3380FC1CCAC1A3008C5793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = battleship/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericheitmuller.battleship;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4B3380FE1CCAC1A3008C5793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = battleshipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericheitmuller.battleshipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/battleship.app/battleship";
+			};
+			name = Debug;
+		};
+		4B3380FF1CCAC1A3008C5793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = battleshipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericheitmuller.battleshipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/battleship.app/battleship";
+			};
+			name = Release;
+		};
+		4B3381011CCAC1A3008C5793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = battleshipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericheitmuller.battleshipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = battleship;
+			};
+			name = Debug;
+		};
+		4B3381021CCAC1A3008C5793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = battleshipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericheitmuller.battleshipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = battleship;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B3380CA1CCAC1A3008C5793 /* Build configuration list for PBXProject "battleship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3380F81CCAC1A3008C5793 /* Debug */,
+				4B3380F91CCAC1A3008C5793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3380FA1CCAC1A3008C5793 /* Build configuration list for PBXNativeTarget "battleship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3380FB1CCAC1A3008C5793 /* Debug */,
+				4B3380FC1CCAC1A3008C5793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B3380FD1CCAC1A3008C5793 /* Build configuration list for PBXNativeTarget "battleshipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3380FE1CCAC1A3008C5793 /* Debug */,
+				4B3380FF1CCAC1A3008C5793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B3381001CCAC1A3008C5793 /* Build configuration list for PBXNativeTarget "battleshipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3381011CCAC1A3008C5793 /* Debug */,
+				4B3381021CCAC1A3008C5793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B3380D91CCAC1A3008C5793 /* battleship.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B3380DA1CCAC1A3008C5793 /* battleship.xcdatamodel */,
+			);
+			currentVersion = 4B3380DA1CCAC1A3008C5793 /* battleship.xcdatamodel */;
+			path = battleship.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4B3380C71CCAC1A3008C5793 /* Project object */;
+}
